@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.qrauth.MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/welcome_to_varta"
+        android:textColor="@color/palette_black_950"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/helperTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/tap_on_icon_to_scan_code"
+        android:textColor="@color/black_54"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_txt"
+        app:drawableStartCompat="@drawable/info" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_done"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/done"
+        app:lottie_loop="true"
+        app:lottie_speed="0.8"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/scan_code_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helperTV" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_error"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/error"
+        app:lottie_loop="true"
+        app:lottie_speed="0.8"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/scan_code_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helperTV" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_loading"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_loop="true"
+        app:lottie_speed="0.8"
+        app:lottie_autoPlay="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/scan_code_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helperTV" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/palette_white"
+        android:visibility="visible"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helperTV"
+        app:layout_constraintVertical_bias="0.13">
+
+        <ImageView
+            android:id="@+id/scannerIV"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/qrcode"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scan_code_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_weight="1"
+        android:background="@drawable/scan_code_bgr"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/scan_code"
+        android:textColor="@color/palette_white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

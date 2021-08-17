@@ -481,6 +481,21 @@ dependencies {
     implementation 'com.google.zxing:core:3.4.1'
     implementation 'me.dm7.barcodescanner:zxing:1.9.13'
 
+    //Form MyBranch to integrate qrcode auth
+    //QR Code scanning dependencies
+    implementation 'com.journeyapps:zxing-android-embedded:3.3.0'
+
+    //Permissions handling dependencies
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    implementation 'com.google.code.gson:gson:2.8.7'
+    //Retrofit 2
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:4.0.0'
+
     // Emoji Keyboard
     implementation 'com.vanniktech:emoji-material:0.7.0'
     implementation 'com.vanniktech:emoji-google:0.7.0'

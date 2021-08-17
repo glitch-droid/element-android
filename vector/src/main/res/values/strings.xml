@@ -3495,4 +3495,10 @@
     <string name="upgrade_room_for_restricted_no_param">Anyone in a parent space will be able to find and join this room - no need to manually invite everyone. You’ll be able to change this in room settings anytime.</string>
 
     <string name="upgrade_room_for_restricted_note">Please note upgrading will make a new version of the room. All current messages will stay in this archived room.</string>
+    <string name="welcome_to_varta">Welcome to Varta</string>
+    <string name="tap_on_icon_to_scan_code">Tap on icon to scan code</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="OTP_Message">Please Enter OTP that has been sent to your Registered Mobile Numbe</string>
+    <string name="login_otp">Login</string>
 </resources>
