@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="1"
         tools:text="@string/it_may_take_some_time" />
 
-    <im.vector.app.core.platform.ButtonStateView
+    <varta.cdac.app.core.platform.ButtonStateView
         android:id="@+id/roomUpgradeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

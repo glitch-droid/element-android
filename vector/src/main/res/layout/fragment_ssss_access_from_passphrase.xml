@@ -112,7 +112,7 @@
             app:layout_constraintTop_toBottomOf="@+id/ssss_passphrase_or"
             tools:ignore="MissingPrefix" />
 
-        <im.vector.app.core.ui.views.BottomSheetActionButton
+        <varta.cdac.app.core.ui.views.BottomSheetActionButton
             android:id="@+id/ssss_passphrase_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

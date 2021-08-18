@@ -62,7 +62,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <im.vector.app.core.ui.views.PasswordStrengthBar
+        <varta.cdac.app.core.ui.views.PasswordStrengthBar
             android:id="@+id/keys_backup_setup_step2_passphrase_strength_level"
             android:layout_width="0dp"
             android:layout_height="4dp"
